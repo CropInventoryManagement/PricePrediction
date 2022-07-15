@@ -9,6 +9,7 @@ body {
 .footer1 {
   background-color: whitesmoke;
   margin: 0;
+  max-width: 100%;
 }
 
 html {
@@ -61,7 +62,7 @@ button:hover {
 
 .content{
   text-align: center;
-  font-family: "Merriweather";
+  font-family: "Montserrat";
   padding-left: 210px;
 }
 
