@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Montserrat;
+    margin-right: auto;
+}
+h1{
+    color: #EFEAD8;
+}
+nav{
+    height: 13vh;
+    background: #6D8B74; 
+    position: sticky;
+   top: 0;
+   z-index: 100;
+}
+
+.nav-links {
+    display:flex;
+    list-style: none;
+    width:60%;
+    height:0%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+
+}
+
+.nav-links .li .navbutton{
+    color: #EFEAD8;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+@media screen and (max-width:768px){
+    .line{
+        width:30px;
+        height: 3px;
+        background:#EFEAD8;
+        margin: 5px;
+    }
+    nav{
+        position: relative;
+    }
+
+    .hamburger{
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%,-50%);
+        z-index: 2;
+    }
+
+    .nav-links{
+        position: fixed;
+        background: #6D8B74;
+        height:100vh;
+        width:100%;
+        flex-direction: column;
+        clip-path: circle(100px at 90% -10%);
+        -webkit-clip-path: circle(100px at 90% -10%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+    }
+    .nav-links.open{
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90% -10%);
+        pointer-events: all;
+    }
+    .nav-links .li{
+        opacity: 0;
+    }
+    .nav-links .li .navbutton{
+        font-size: 25px;
+    }
+    .nav-links .li:nth-child(1){
+        transition: all 0.5s ease 0.2s;
+    }
+    .nav-links .li:nth-child(2){
+        transition: all 0.5s ease 0.4s;
+    }
+    .nav-links .li:nth-child(3){
+        transition: all 0.5s ease 0.6s;
+    }
+    .li.fade {
+        opacity: 1;
+    }
+}
+
+.carousel .d-block {
+    width:1265px;
+    height:500px;
+  }
+
+  .about-us{
+    padding-top: 20px;
+    padding-bottom: 50px;
+    text-align: center;
+    background-color: #EFEAD8;
+  }
+
+  h3{
+    padding-top: 50px;
+    text-align: center;
+    color: #6D8B74;
+    padding-bottom: 30px;
+  }
+
+  .about-us-content{
+    width: 60%;
+    margin: auto;
+    padding-bottom: 20px;
+  }
+  form {
+    top: 10px;
+    margin: 30px;
+    padding: 20px;
+    background-color: #D0C9C0;
+    width: 30%;
+    float: left;
+  }
+  .btn{
+    padding: 10px;
+    margin: 12px;
+  }
+  .wrapper{
+    width: 60%;
+    float: right;
+}
+
+.footer1 {
+    clear: both;
+    color: #EFEAD8;
+    background-color: #6D8B74;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+ }
+
+.footer-data{
+    color: #EFEAD8;
+}
